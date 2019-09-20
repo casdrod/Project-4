@@ -1,0 +1,153 @@
+.container {
+    padding: 0 10px;
+    @include mq(large) {
+        max-width: 1400px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+  
+.row {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 10px;
+    @include mq(large) {
+        flex-direction: row;
+    }
+}
+
+[class^=col] {
+    margin-top: 10px;
+    flex-basis: 100%;
+    min-height: 25px;
+    padding: 10px;
+    border-radius: 5px;
+    @include mq(large) {
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+        align-items: center;
+    }
+    & + [class^=col] {
+        @include mq(large) {
+            margin-left: 10px; 
+        }
+    }
+}
+
+.theme.col-1 {
+    background-color: $color-info;
+    :not(.theme) {
+        @include mq(large) {
+            flex-basis: 8.33%;
+        }
+    }
+}
+
+.theme.col-2 {
+    background-color: $color-warning;
+    :not(.theme) {
+        @include mq(large) {
+            flex-basis: 16.67%;
+        }
+    }
+}
+
+.theme.col-3 {
+    background-color: $color-col3;
+    :not(.theme) {
+        @include mq(large) {
+            flex-basis: 25.00%;
+        }
+    }
+}
+
+.theme.col-4 {
+    background-color: $color-primary;
+    :not(.theme) {
+        @include mq(large) {
+            flex-basis: 33.33%;
+        }
+    }
+    @include mq(large) {
+        margin-left: 10px;
+    }
+}
+
+.theme.col-5 {
+    background-color: $color-col5;
+    :not(.theme) {
+        @include mq(large) {
+            flex-basis: 41.67%;
+        }
+    }
+}
+
+.theme.col-6 {
+    background-color: $color-col6;
+    :not(.theme) {
+        @include mq(large) {
+            flex-basis: 50.00%;
+        }
+    }
+}
+
+.theme.col-7 {
+    background-color: $color-col7;
+    :not(.theme) {
+        @include mq(large) {
+            flex-basis: 58.33%;
+        }
+    }
+}
+
+.theme.col-8 {
+    background-color: $color-col8;
+    :nont(.theme) {
+        @include mq(large) {
+            flex-basis: 66.67%;
+        }
+    }
+}
+
+.theme.col-9 {
+    background-color: $color-error;
+    :not(.theme) {
+        @include mq(large) {
+            flex-basis: 75.00%;
+        }
+    }
+}
+
+.theme.col-10 {
+    background-color: $color-success;
+    :not(.theme) {
+        @include mq(large) {
+            flex-basis: 83.33%;
+        }
+    }
+}
+
+.theme.col-11 {
+    background-color: $color-col11;
+    :not(.theme) {
+        @include mq(large) {
+            flex-basis: 91.67%;
+        }
+    }
+}
+
+.theme.col-12 {
+    background-color: $color-col12;
+    :not(.theme) {
+        @include mq(large) {
+            flex-basis: 100%;
+        }
+    }
+     
+}
+
+.card {
+    flex-basis: 100%;
+}
