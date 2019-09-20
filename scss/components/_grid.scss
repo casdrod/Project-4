@@ -17,6 +17,14 @@
     }
 }
 
+.centered {
+    @include mq(large) {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  }
+
 [class^=col] {
     margin-top: 10px;
     flex-basis: 100%;
@@ -36,116 +44,112 @@
     }
 }
 
-.theme.col-1 {
-    background-color: $color-info;
-    :not(.theme) {
-        @include mq(large) {
-            flex-basis: 8.33%;
-        }
-    }
-}
-
-.theme.col-2 {
-    background-color: $color-warning;
-    :not(.theme) {
-        @include mq(large) {
-            flex-basis: 16.67%;
-        }
-    }
-}
-
-.theme.col-3 {
-    background-color: $color-col3;
-    :not(.theme) {
-        @include mq(large) {
-            flex-basis: 25.00%;
-        }
-    }
-}
-
-.theme.col-4 {
-    background-color: $color-primary;
-    :not(.theme) {
-        @include mq(large) {
-            flex-basis: 33.33%;
-        }
-    }
+.col-1 {
     @include mq(large) {
-        margin-left: 10px;
+        flex-basis: 8.33%;
+    }
+    &.theme {
+        background-color: $color-info;
     }
 }
 
-.theme.col-5 {
-    background-color: $color-col5;
-    :not(.theme) {
-        @include mq(large) {
-            flex-basis: 41.67%;
-        }
+.col-2 {
+    @include mq(large) {
+        flex-basis: 16.67%;
+    }
+    &.theme {
+        background-color: $color-warning;
     }
 }
 
-.theme.col-6 {
-    background-color: $color-col6;
-    :not(.theme) {
-        @include mq(large) {
-            flex-basis: 50.00%;
-        }
+.col-3 {
+    @include mq(large) {
+        flex-basis: 25.00%;
+    }
+    &.theme {
+        background-color: $color-col3;
     }
 }
 
-.theme.col-7 {
-    background-color: $color-col7;
-    :not(.theme) {
-        @include mq(large) {
-            flex-basis: 58.33%;
-        }
+.col-4 {
+    @include mq(large) {
+        flex-basis: 33.33%;
+    }
+    &.theme {
+        background-color: $color-col4;
     }
 }
 
-.theme.col-8 {
-    background-color: $color-col8;
-    :nont(.theme) {
-        @include mq(large) {
-            flex-basis: 66.67%;
-        }
+.col-5 {
+    @include mq(large) {
+        flex-basis: 41.67%;
+    }
+    &.theme {
+        background-color: $color-col5;
     }
 }
 
-.theme.col-9 {
-    background-color: $color-error;
-    :not(.theme) {
-        @include mq(large) {
-            flex-basis: 75.00%;
-        }
+.col-6 {
+    @include mq(large) {
+        flex-basis: 50.00%;
+    }
+    &.theme {
+        background-color: $color-col6;
     }
 }
 
-.theme.col-10 {
-    background-color: $color-success;
-    :not(.theme) {
-        @include mq(large) {
-            flex-basis: 83.33%;
-        }
+.col-7 {
+    @include mq(large) {
+        flex-basis: 58.33%;
+    }
+    &.theme {
+        background-color: $color-col7;
     }
 }
 
-.theme.col-11 {
-    background-color: $color-col11;
-    :not(.theme) {
-        @include mq(large) {
-            flex-basis: 91.67%;
-        }
+.col-8 {
+    @include mq(large) {
+        flex-basis: 66.67%;
+    }
+    &.theme {
+        background-color: $color-col8;
     }
 }
 
-.theme.col-12 {
-    background-color: $color-col12;
-    :not(.theme) {
-        @include mq(large) {
-            flex-basis: 100%;
-        }
+.col-9 {
+    @include mq(large) {
+        flex-basis: 75.00%;
     }
-     
+    &.theme {
+        background-color: $color-error;
+    }
+}
+
+.col-10 {
+    @include mq(large) {
+        flex-basis: 83.33%;
+    }
+    &.theme {
+        background-color: $color-success;
+    }
+}
+
+.col-11 {
+    @include mq(large) {
+        flex-basis: 91.67%;
+    }
+    &.theme {
+        background-color: $color-col11;
+    }
+}
+
+.col-12 {
+    @include mq(large) {
+        flex-basis: 100%;
+    }
+    &.theme {
+        background-color: $color-col12;   
+    }
 }
 
 .card {
