@@ -23,26 +23,8 @@
         margin-left: auto;
         margin-right: auto;
     }
-  }
-
-[class^=col] {
-    margin-top: 10px;
-    flex-basis: 100%;
-    min-height: 25px;
-    padding: 10px;
-    border-radius: 5px;
-    & + [class^=col] {
-        @include mq(large) {
-            margin-left: 10px;
-        }
-    }
-    @include mq(large) {
-        display: flex;
-        justify-content: center;
-        margin-top: 0;
-        align-items: center;
-    }
 }
+
 
 .col-1 {
     @include mq(large) {
