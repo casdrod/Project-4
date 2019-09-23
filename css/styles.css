@@ -151,11 +151,6 @@ a {
     align-items: center;
   }
 }
-@media (min-width: 768px) {
-  [class^=col] + [class^=col] {
-    margin-left: 10px;
-  }
-}
 
 @media (min-width: 768px) {
   .col-1 {

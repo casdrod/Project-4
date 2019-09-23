@@ -31,16 +31,16 @@
     min-height: 25px;
     padding: 10px;
     border-radius: 5px;
+    & + [class^=col] {
+        @include mq(large) {
+            margin-left: 10px;
+        }
+    }
     @include mq(large) {
         display: flex;
         justify-content: center;
         margin-top: 0;
         align-items: center;
-    }
-    & + [class^=col] {
-        @include mq(large) {
-            margin-left: 10px; 
-        }
     }
 }
 
