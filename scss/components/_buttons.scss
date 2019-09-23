@@ -18,20 +18,40 @@
   
 .default {
     background-color: $color-links;
+    &:hover {
+        background-color: $color-links-light;
+        transition: .2s ease-in;
+    }
 }
 
 .error {
     background-color: $color-error;
+    &:hover {
+        background-color: $color-error-light;
+        transition: .2s ease-in;
+    }
 }
 
 .info {
     background-color: $color-info;
+    &:hover {
+        background-color: $color-info-light;
+        transition: .2s ease-in;
+    }
 }
 
 .success {
     background-color: $color-success;
+    &:hover {
+        background-color: $color-success-light;
+        transition: .2s ease-in;
+    }
 }
 
 .warning {
     background-color: $color-warning;
+    &:hover {
+        background-color: $color-warning-light;
+        transition: .2s ease-in;
+    }
 }

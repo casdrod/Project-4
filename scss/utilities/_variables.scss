@@ -1,4 +1,4 @@
-// Colors
+// Base Colors
 $color-primary: #58e1c1;
 $color-links: #51ddfc;
 
@@ -19,6 +19,13 @@ $color-col7: #ec9fa3;
 $color-col8: #fd9f85;
 $color-col11: #51ddfc;
 $color-col12: #80e8d1;
+
+// Lightened Colors
+$color-links-light: lighten($color-links, 15%);
+$color-error-light: lighten($color-error, 15%);
+$color-info-light: lighten($color-info, 15%);
+$color-success-light: lighten($color-success, 15%);
+$color-warning-light: lighten($color-warning, 15%);
 
 // Breakpoints
 $brkpoint-lg: 768px;

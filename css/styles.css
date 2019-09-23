@@ -405,21 +405,41 @@ a {
 .default {
   background-color: #51ddfc;
 }
+.default:hover {
+  background-color: #9cecfd;
+  transition: 0.2s ease-in;
+}
 
 .error {
   background-color: #e4757a;
+}
+.error:hover {
+  background-color: #f1b5b8;
+  transition: 0.2s ease-in;
 }
 
 .info {
   background-color: #927bc1;
 }
+.info:hover {
+  background-color: #bdafd9;
+  transition: 0.2s ease-in;
+}
 
 .success {
   background-color: #63cc82;
 }
+.success:hover {
+  background-color: #9ddfb0;
+  transition: 0.2s ease-in;
+}
 
 .warning {
   background-color: #fd7856;
+}
+.warning:hover {
+  background-color: #feb4a2;
+  transition: 0.2s ease-in;
 }
 
 .form {
@@ -488,6 +508,9 @@ a {
     justify-content: center;
     margin-top: 0;
     align-items: center;
+  }
+  [class^=col] + [class^=col] {
+    margin-left: 10px;
   }
 }
 
@@ -641,7 +664,6 @@ a {
     align-items: center;
   }
 }
-
 .nav-link {
   text-align: center;
   border-radius: 5px;
@@ -655,7 +677,6 @@ a {
     flex-basis: 100px;
   }
 }
-
 .nav-link:hover {
   color: #fff;
   background-color: #58e1c1;
